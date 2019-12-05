@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--Normal-->
+    <color name="stroke">#26000000</color>
+
+    <color name="title_bar_underline">#b3b3b3</color>
+    <color name="title_bar_underline2">#0c000000</color>
+
+    <color name="divider_line">#0c000000</color>
+
+    <color name="btn_type1">#0c000000</color>
+    <color name="btn_type1_text">#e02828</color>
+
+    <color name="btn_type2">#e02828</color>
+    <color name="btn_type2_text">#ffffff</color>
+    <color name="btn_type2_subtext">#c0ffffff</color>
+    <color name="white">#ffffff</color>
+
+    <color name="text_red">@color/btn_type1_text</color>
+    <color name="btn_mask">#000000</color>
+    <color name="btn_mask_text">#ffffff</color>
+
+    <color name="btn_stroke">#4c000000</color>
+
+    <color name="text_title">#000000</color>
+    <color name="text_subtitle">#000000</color>
+    <color name="text_normal">#000000</color>
+    <color name="text_comment">#8c000000</color>
+
+    <color name="text_title_highlight">#ffffff</color>
+    <color name="text_subtitle_highlight">#ffffff</color>
+    <color name="text_normal_highlight">#ffffff</color>
+    <color name="text_comment_highlight">#c0ffffff</color>
+    <color name="text_hint">#4cffffff</color>
+
+    <color name="text_busy">#c0ffffff</color>
+
+    <color name="text_remind">#f0862d</color>
+
+    <color name="edit_text_background">#0c000000</color>
+    <color name="edit_text">#000000</color>
+    <color name="edit_hint">#4c000000</color>
+    <color name="edit_stroke">#4c000000</color>
+    <color name="edit_text_comment">#8c000000</color>
+
+    <color name="list_selected_background">#1a000000</color>
+    <color name="list_selected_text">#000000</color>
+    <color name="list_unselected_text">#ff888888</color>
+
+    <color name="mask_text">#c0ffffff</color>
+    <color name="mask">#cc000000</color>
+    <color name="mask_mpay_get_price">#e6000000</color>
+
+    <color name="has_new_item">#e02828</color>
+    <color name="dialog_button">#007aff</color>
+
+    <color name="carestimate_text">#e02828</color>
+
+    <color name="underline">#e02828</color>
+
+    <color name="change">#e02828</color>
+
+    <color name="more">#007aff</color>
+    <color name="coupon_txt">#e02828</color>
+
+    <color name="chip_background">#BDBDBD</color>
+    <color name="chip_background_selected">#9E9E9E</color>
+
+    <color name="teal">#009688</color>
+    <color name="purple">#9C27B0</color>
+    <color name="blue">#2196F3</color>
+    <color name="btn_delete">#ff0000</color>
+</resources>

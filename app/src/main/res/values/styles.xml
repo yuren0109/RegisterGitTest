@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--btn_type1-->
+    <style name="btn_type1" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/btn_round_corner_type_1</item>
+        <item name="android:textColor">@color/btn_type1_text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--btn_type2-->
+    <style name="btn_type2" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/btn_round_corner_type_2</item>
+        <item name="android:textColor">@color/btn_type2_text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <!--edit_text_dialog-->
+    <style name="edit_text_dialog" parent="android:style/Widget.EditText">
+        <item name="android:textColor">@color/text_normal</item>
+        <item name="android:textColorHint">@color/text_comment</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_red</item>
+        <item name="android:background">@drawable/edit_text_dialog</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">RegisterGitTest</string>
+
+    <!--Login-->
+    <string name="login_welcome_message">您好，歡迎使用\n178叫計程車</string>
+    <string name="guest_login_welcome">歡迎使用178叫計程車</string>
+    <string name="sms_register_exception_msg">簡訊完成後，可能需您自行開啟 178叫計程車 APP</string>
+
+
+    <!--login-->
+    <string name="login_sms_register">簡訊註冊</string>
+    <string name="login_sms_register_agree">同意註冊</string>
+    <string name="login_sms_register_no_intent_msg">搜尋不到可以發送簡訊的應用程式，請自行啟動簡訊應用程式並傳送簡訊至 @phone。</string>
+    <string name="login_sms_register_no_intent_copy_msg">複製簡訊內容</string>
+    <string name="sms_register_false">註冊失敗。請重新嘗試一次（或改用＂撥號註冊＂）。</string>
+
+    <string name="login_phone_register">撥號註冊</string>
+    <string name="login_or_phone_register">或是，撥號註冊</string>
+    <string name="login_or">或是 </string>
+    <string name="login_skip">略過</string>
+    <string name="login_again">已註冊，重登入</string>
+
+    <string name="term">服務條款</string>
+    <string name="login_term_agree">註冊等同於同意</string>
+    <string name="term_msg">為了司機到達時或者搭車遺忘隨身物品時，客服可能會通知您。我們需要您的電話號碼做叫車聯絡使用。</string>
+    <string name="stop_login_message">無法連到系統，請檢查通訊網路是否正常，或移動到通訊正常區按「再試」或「接通服務人員」將後面數字告訴服務人員（@errorCode）；</string>
+    <string name="callCS">接通服務人員</string>
+    <string name="guest_login">立即註冊\n使用完整功能</string>
+
+    <!--help-->
+    <string name="login_help">幫助</string>
+
+    <!--register-->
+    <string name="phone_register">撥號註冊</string>
+    <string name="phone_register_agree">同意進行撥號註冊</string>
+    <string name="phone_register_phone">手機</string>
+    <string name="phone_register_enter_phone">請輸入您的手機號碼</string>
+    <string name="phone_register_message">* 當您撥號並聽到語音“註冊成功”，即代表完成註冊。（撥號不成功？ 幫助）</string>
+</resources>

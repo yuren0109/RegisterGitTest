@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SlideBottomLayout">
+        <attr name="handler_height" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="MtaxiButton">
+        <attr name="press_animation" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="NumPickView">
+        <attr name="totalNum" format="integer" />
+        <attr name="showNum" format="integer" />
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="RatioImageView">
+        <!--寬度是否根據src圖片的比例來測量(高度已知)-->
+        <attr name="riv_is_width_fix_drawable_size_ratio" format="boolean" />
+        <!--高度是否根據src圖片的比例來測量(寬度已知)-->
+        <attr name="riv_is_height_fix_drawable_size_ratio" format="boolean" />
+        <!--當mIsWidthFitDrawableSizeRatio生效時，最大寬度-->
+        <attr name="riv_max_width_when_width_fix_drawable" format="dimension" />
+        <!--當mIsHeightFitDrawableSizeRatio生效時-->
+        <attr name="riv_max_height_when_height_fix_drawable" format="dimension" />
+        <!--高度設置，參考寬度，如0.5，表示 高度=寬度*0.5-->
+        <attr name="riv_height_to_width_ratio" format="float" />
+        <!--寬度設置，參考寬度，如0.5，表示 寬度=高度*0.5-->
+        <attr name="riv_width_to_height_ratio" format="float" />
+        <!--寬度和高度，避免layout_width/layout_height會在超過屏幕尺寸時特殊處理情況-->
+        <attr name="riv_width" format="dimension" />
+        <attr name="riv_height" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="MaskImageView">
+        <!-- 遮罩的層面：背景/前景圖-->
+        <attr name="miv_mask_level" format="enum">
+            <enum name="background" value="1" />
+            <enum name="foreground" value="2" />
+        </attr>
+        <!-- 設置了setClickable(true)才生效，默認開啟遮罩-->
+        <attr name="miv_is_show_mask_on_click" format="boolean" />
+        <attr name="miv_mask_color" format="color" />
+        <!--是否忽略圖片透明度，默認為true，透明部分不顯是遮罩-->
+        <attr name="miv_is_ignore_alpha" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ShapeImageView">
+        <attr name="siv_shape" format="enum">
+            <enum name="rect" value="1" />
+            <enum name="circle" value="2" />
+            <enum name="oval" value="3" />
+        </attr>
+        <attr name="siv_round_radius" format="dimension" />
+        <attr name="siv_round_radius_leftTop" format="dimension" />
+        <attr name="siv_round_radius_leftBottom" format="dimension" />
+        <attr name="siv_round_radius_rightTop" format="dimension" />
+        <attr name="siv_round_radius_rightBottom" format="dimension" />
+        <attr name="siv_border_size" format="dimension" />
+        <attr name="siv_border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ScrollPickerView">
+        <attr name="spv_center_item_background" format="reference|color" />
+        <attr name="spv_visible_item_count" format="integer" />
+        <!--中間item的位置，默認為mVisibleItemCount/2-->
+        <attr name="spv_center_item_position" format="integer" />
+        <!--是否循環滾動，默認為true，開啟-->
+        <attr name="spv_is_circulation" format="boolean" />
+        <!--不允許父組件攔截觸摸事件，設置為true為不允許攔截，此時該設置才生效-->
+        <attr name="spv_disallow_intercept_touch" format="boolean" />
+        <!--滾動的方向-->
+        <attr name="spv_orientation" format="string">
+            <enum name="horizontal" value="1" />
+            <enum name="vertical" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="StringScrollPicker">
+        <attr name="spv_min_text_size" format="dimension" />
+        <attr name="spv_max_text_size" format="dimension" />
+        <attr name="spv_start_color" format="color" />
+        <attr name="spv_end_color" format="color" />
+        <attr name="spv_max_line_width" format="dimension" />
+        <attr name="spv_alignment" format="enum">
+            <enum name="center" value="1" />
+            <enum name="left" value="2" />
+            <enum name="right" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="BitmapScrollPicker">
+        <!--繪製圖片的方式-->
+        <attr name="spv_draw_bitmap_mode" format="string">
+            <enum name="fill" value="1" />
+            <enum name="center" value="2" />
+            <enum name="size" value="3" />
+        </attr>
+        <!--繪製圖片的方式為size時，指定的圖片繪製大小-->
+        <attr name="spv_draw_bitmap_width" format="dimension" />
+        <attr name="spv_draw_bitmap_height" format="dimension" />
+        <!--item內容縮放倍數-->
+        <attr name="spv_min_scale" format="float" />
+        <attr name="spv_max_scale" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="rpb_background" format="color" />
+        <attr name="rpb_background_width" format="dimension" />
+        <attr name="rpb_color" format="color" />
+        <attr name="rpb_width" format="dimension" />
+        <attr name="rpb_max_progress" format="float" />
+        <attr name="rpb_progress" format="float" />
+    </declare-styleable>
+
+    <!--字體顏色遮罩-->
+    <declare-styleable name="STextView">
+        <attr name="stv_text_color_selected" format="color" />
+        <attr name="stv_text_color_pressed" format="color" />
+        <attr name="stv_text_color_disable" format="color" />
+
+        <!--過時的配置，等於stv開頭的屬性-->
+        <attr name="mtv_text_color_pressed" format="color" />
+        <attr name="mtv_text_color_disable" format="color" />
+    </declare-styleable>
+
+    <!--設置view相關selector熟悉-->
+    <declare-styleable name="View">
+
+        <attr name="injectListener" format="boolean" />
+
+        <!--背景形狀-->
+        <attr name="sel_background_shape" format="enum">
+            <enum name="rect" value="0" />
+            <enum name="oval" value="1" />
+            <enum name="line" value="2" />
+            <enum name="ring" value="3" />
+        </attr>
+        <!--背景圓角-->
+        <attr name="sel_background_corners" format="dimension" />
+        <attr name="sel_background_corner_topLeft" format="dimension" />
+        <attr name="sel_background_corner_topRight" format="dimension" />
+        <attr name="sel_background_corner_bottomLeft" format="dimension" />
+        <attr name="sel_background_corner_bottomRight" format="dimension" />
+        <!--背景狀態-->
+        <attr name="sel_background_pressed" format="reference|color" />
+        <attr name="sel_background_selected" format="reference|color" />
+        <!--背景邊框-->
+        <attr name="sel_background_border_color" format="color" />
+        <attr name="sel_background_border_width" format="dimension" />
+        <!--背景邊框狀態-->
+        <attr name="sel_background_border_pressed" format="color" />
+        <attr name="sel_background_border_selected" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ChipView">
+        <attr name="chip_spacing" format="dimension" />
+        <attr name="chip_line_spacing" format="dimension" />
+        <attr name="chip_padding" format="dimension" />
+        <attr name="chip_side_padding" format="dimension" />
+        <attr name="chip_corner_radius" format="dimension" />
+        <attr name="chip_background" format="reference" />
+        <attr name="chip_background_selected" format="reference" />
+        <attr name="chip_background_res" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean"/>
+        <attr name="ios" format="boolean"/>
+        <attr name="leftSwipe" format="boolean"/>
+    </declare-styleable>
+</resources>
