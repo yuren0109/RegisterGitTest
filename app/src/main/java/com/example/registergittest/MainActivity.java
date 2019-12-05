@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private FragmentTransaction transaction;
     private FrameLayout frameLayoutBalance;
     PhoneRegisterFragment phoneRegisterFragment;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,6 +100,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+    void testBranch() {
+        Log.d("test","測試分支功能");
+    }
 }
 
