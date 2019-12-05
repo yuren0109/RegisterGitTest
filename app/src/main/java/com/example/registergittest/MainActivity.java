@@ -99,6 +99,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+    void testMaster() {
+        Log.d("test","測試分支功能");
+    }
 }
 
